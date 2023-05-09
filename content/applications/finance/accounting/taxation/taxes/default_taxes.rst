@@ -2,11 +2,10 @@
 Default taxes
 =============
 
-**Default Taxes** define which :doc:`taxes <taxes>` are automatically selected when there is no
-other indication about which tax to use. For example, Odoo prefills the **Taxes** field with the
-Default Taxes when you create a new product or add a new line on an invoice.
+**Default Taxes** define which :doc:`taxes <taxes>` are automatically selected when creating a new product.
+They are also used to prefill the :guilabel:`Taxes` field when adding a new line on an invoice in Accounting Firms mode.
 
-.. image:: default_taxes/default-taxes-invoice-line.png
+.. image:: default_taxes/default-taxes-product.png
    :align: center
    :alt: Odoo fills out the Tax field automatically according to the Default Taxes
 
