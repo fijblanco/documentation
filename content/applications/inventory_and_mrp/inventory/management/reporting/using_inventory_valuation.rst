@@ -86,25 +86,27 @@ likewise, displays the stock valuation record as it does on a :abbr:`PO (Purchas
 The inventory valuation report
 ------------------------------
 
-To view the current value of all products in the warehouse, go to :menuselection:`Inventory app -->
-Reporting --> Valuation`. The page displays detailed records of products with the :guilabel:`Date`,
-:guilabel:`Quantity`, :guilabel:`Unit Value` and :guilabel:`Total Value` of the inventory.
+To view the current value of all products in a warehouse, go to :menuselection:`Inventory app -->
+Reporting --> Valuation`. Doing so, reveals a page displaying detailed records of products with the
+:guilabel:`Date`, :guilabel:`Quantity`, :guilabel:`Unit Value` and :guilabel:`Total Value` of the
+inventory.
 
 .. important::
-   :ref:`Developer mode<developer-mode>` must be turned on to see the :guilabel:`Valuation` option
-   under :guilabel:`Reporting`.
+   :ref:`Developer mode<developer-mode>` **must** be turned on to see the :guilabel:`Valuation`
+   option under :guilabel:`Reporting`.
 
 .. image:: using_inventory_valuation/inventory-valuation-products.png
    :align: center
    :alt: Inventory valuation report showing multiple products.
 
-The :guilabel:`Inventory At Date` button, located in the top-left corner of the :guilabel:`Stock
-Valuation` dashboard, shows the inventory valuation of products available during a prior specified
-date.
+The :guilabel:`Valuation At Date` button, located in the top-left corner of the :guilabel:`Stock
+Valuation` page, reveals a pop-up window. In this pop-up, the inventory valuation of products
+available during a prior specified date can be selected and seen.
 
 .. tip::
-   View a detailed record of a product's inventory value, stock move, and on-hand stock by selecting
-   the teal ":guilabel:`-->`" button to the right of the *Reference* column value.
+   View a detailed record of a product's inventory value, stock moves, and on-hand stock by
+   clicking the teal arrow icon (:guilabel:`-->`) to the right of the :guilabel:`Reference` column
+   value.
 
 Update product unit price
 ~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -123,9 +125,10 @@ serves as an additional tool to update the unit price of products.
    :alt: Add manual valuation of stock value to a product.
 
 Create manual valuation entries on the :guilabel:`Stock Valuation` dashboard by first navigating to
-:menuselection:`Inventory app --> Reporting --> Valuation`. Then, select :menuselection:`Group by
---> Product` to organize all the records by product. Click on the little gray drop-down icon to then
-reveal stock valuation line items below as well as a teal :guilabel:`+ (plus)` button on the right.
+:menuselection:`Inventory app --> Reporting --> Valuation`. Next, select :menuselection:`Group by
+--> Product` to organize all the records by product. Then, click on the gray drop-down icon, on the
+far left of the desired line item, to reveal stock valuation line items and a teal :guilabel:`+
+(plus)` clickable icon on the right.
 
 Click the teal :guilabel:`+ (plus)` button to open up the :guilabel:`Product Revaluation` form,
 where updates to the calculation of inventory valuation can be made, by increasing or decreasing the
