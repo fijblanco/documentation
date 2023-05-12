@@ -87,4 +87,4 @@ Other useful fields :
    (always displayed) or ``never`` (never shown).
 
 .. seealso::
-    * :doc:`main_reports`
+    * :doc:`..`

@@ -1,9 +1,18 @@
 # applications/finance
 
+applications/finance/accounting/others/adviser/budget.rst applications/finance/accounting/reporting/budget.rst                                     # others/adviser/* -> reporting/*
+applications/finance/accounting/others/analytic/purchases_expenses.rst applications/finance/accounting/reporting/analytic/purchases_expenses.rst   # others/analytic/* -> reporting/analytic/*
+applications/finance/accounting/others/analytic/timesheets.rst applications/finance/accounting/reporting/analytic/timesheets.rst                   # others/analytic/* -> reporting/analytic/*
+applications/finance/accounting/others/analytic/usage.rst applications/finance/accounting/reporting/analytic.rst                                   # others/analytic/usage -> reporting/analytic
 applications/finance/accounting/others/multicurrencies/exchange.rst applications/finance/accounting/others/multi_currency.rst                      # /multicurrencies/* -> multi_currency
 applications/finance/accounting/others/multicurrencies/how_it_works.rst applications/finance/accounting/others/multi_currency.rst                  # /multicurrencies/* -> multi_currency
 applications/finance/accounting/others/multicurrencies/invoices_payments.rst applications/finance/accounting/others/multi_currency.rst             # /multicurrencies/* -> multi_currency
-applications/finance/accounting/payables/supplier_bills/ocr.rst applications/finance/accounting/payables/supplier_bills/invoice_digitization.rst    # ocr --> invoice_digitization
+applications/finance/accounting/payables/supplier_bills/ocr.rst applications/finance/accounting/payables/supplier_bills/invoice_digitization.rst   # ocr --> invoice_digitization
+applications/finance/accounting/reporting/declarations/intrastat.rst applications/finance/accounting/reporting/intrastat.rst                       # reporting/declarations/* -> reporting/*
+applications/finance/accounting/reporting/declarations/tax_returns.rst applications/finance/accounting/reporting/tax_returns.rst                   # reporting/declarations/* -> reporting/*
+applications/finance/accounting/reporting/overview/customize.rst applications/finance/accounting/reporting/customize.rst                           # reporting/overview/* -> reporting/*
+applications/finance/accounting/reporting/overview/data_inalterability.rst applications/finance/accounting/reporting/data_inalterability.rst       # reporting/overview/* -> reporting/*
+applications/finance/accounting/reporting/overview/main_reports.rst applications/finance/accounting/reporting.rst                                  # reporting/overview/main_reports -> reporting
 
 # applications/general
 

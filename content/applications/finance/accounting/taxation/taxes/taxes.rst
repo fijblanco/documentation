@@ -165,7 +165,7 @@ multiple accounts and Tax Grids.
   - % of tax: a percentage of the computed tax.
 
 - **Account**: if defined, an additional Journal Item is recorded.
-- **Tax Grids**:  used to generate :doc:`Tax Reports <../../reporting/declarations/tax_returns>`
+- **Tax Grids**:  used to generate :doc:`Tax Reports <../../reporting/tax_returns>`
   automatically, according to your country's regulations.
 
 .. _taxes/advanced-tab:
@@ -278,4 +278,4 @@ directly to a product line.
   - :doc:`fiscal_positions`
   - :doc:`B2B_B2C`
   - :doc:`taxcloud`
-  - :doc:`../../reporting/declarations/tax_returns`
+  - :doc:`../../reporting/tax_returns`

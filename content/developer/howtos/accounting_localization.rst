@@ -249,7 +249,7 @@ The tax report is declared in the :guilabel:`Invoicing` (`account`) app, but the
 
 .. seealso::
    - :ref:`Tax Report Line References <reference/account_tax_report_line>`
-   - :doc:`/applications/finance/accounting/reporting/declarations/tax_returns`
+   - :doc:`/applications/finance/accounting/reporting/tax_returns`
 
 In the previous section, you noticed the fields `invoice_repartition_line_ids` or `refund_repartition_line_ids` and probably understood nothing about them. Good news: you are not alone on this incomprehension. Bad news: you have to figure it out a bit. The topic is complicated. Indeed:
 
@@ -343,7 +343,7 @@ Accounting reports
    <div><span class="badge" style="background-color:#AD5E99">Enterprise feature</span><div>
 
 .. seealso::
-  :doc:`/applications/finance/accounting/reporting/overview`
+  :doc:`/applications/finance/accounting/reporting`
 
 Accounting reports should be added via a separate module `l10n_XX_reports` that should go to the `enterprise repository <{GITHUB_ENT_PATH}>`_.
 
@@ -367,7 +367,7 @@ Basic :file:`__manifest__.py` file for such a module looks as following:
     }
 
 
-Functional overview of financial reports is here: :doc:`/applications/finance/accounting/reporting/overview/main_reports`.
+Functional overview of financial reports is here: :doc:`/applications/finance/accounting/reporting`.
 
 Some good examples:
 

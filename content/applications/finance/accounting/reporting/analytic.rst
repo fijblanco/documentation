@@ -1,6 +1,12 @@
-==========================
-Analytic account use cases
-==========================
+:show-content:
+
+========
+Analytic
+========
+
+.. seealso::
+   - :doc:`analytic/timesheets`
+   - :doc:`analytic/purchases_expenses`
 
 The analytic accounting can be used for several purposes:
 
@@ -13,8 +19,7 @@ The analytic accounting can be used for several purposes:
 To manage analytic accounting, you have to activate it in
 :menuselection:`Configuration --> Settings`:
 
-.. image:: usage/usage01.png
-   :align: center
+.. image:: analytic/usage01.png
 
 To illustrate analytic accounts clearly, you will follow three use
 cases, each in one of three different types of company:
@@ -88,8 +93,7 @@ The analytic representation by department enables you to investigate the
 costs allocated to each department in the company. The analytic chart of
 accounts shows the distribution of the company's costs using the example above:
 
-.. image:: usage/usage02.png
-   :align: center
+.. image:: analytic/usage02.png
 
 In this example of a hierarchical structure in Odoo, you can analyse not
 only the costs of each product range, but also the costs of the whole
@@ -97,8 +101,7 @@ production. A report that relates both general accounts and analytic
 accounts enables you to get a breakdown of costs within a given
 department.
 
-.. image:: usage/usage03.png
-   :align: center
+.. image:: analytic/usage03.png
 
 The examples above are based on a breakdown of the costs of the company.
 Analytic allocations can be just as effective for sales. That gives you
@@ -175,7 +178,7 @@ Such a structure allows you to make a detailed study of the
 profitability of various transactions.
 
 For more details about profitablity, please read the following document:
-:doc:`timesheets`
+:doc:`analytic/timesheets`
 
 But analytical accounting is not limited to a simple analysis of the
 profitability of different customer. The same data can be used for
@@ -222,3 +225,9 @@ production performance.
 
 Analytic accounting is flexible and easy to use through all Odoo
 applications (sales, purchase, timesheet, production, invoice, …).
+
+.. toctree::
+   :titlesonly:
+
+   analytic/timesheets
+   analytic/purchases_expenses

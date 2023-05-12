@@ -41,7 +41,7 @@ To do so, go to :menuselection:`Accounting --> Configuration --> Settings`. Unde
 
 .. note::
    This is usually configured during the :doc:`app's initial set up
-   <../../getting_started/initial_configuration/setup>`.
+   <../getting_started/initial_configuration/setup>`.
 
 .. _tax-returns/tax-grids:
 
@@ -119,6 +119,6 @@ report to the tax authorities, along with the amount you have to pay or be refun
    date manually before, as described above.
 
 .. seealso::
-   * :doc:`../../taxation/taxes/taxes`
-   * :doc:`../../getting_started/initial_configuration/setup`
-   * :doc:`../../../fiscal_localizations`
+   * :doc:`../taxation/taxes/taxes`
+   * :doc:`../getting_started/initial_configuration/setup`
+   * :doc:`../../fiscal_localizations`
