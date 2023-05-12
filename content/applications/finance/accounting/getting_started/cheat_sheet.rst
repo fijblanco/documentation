@@ -147,7 +147,7 @@ credits.
 Reconciliation
 ==============
 
-:doc:`Reconciliation <../../accounting/bank/reconciliation/use_cases>` is the process of linking
+:doc:`Reconciliation <../../accounting/bank/reconciliation>` is the process of linking
 journal items of a specific account and matching credits and debits.
 
 Its primary purpose is to link payments to their related invoices to mark them as paid. This is done

@@ -7,7 +7,7 @@ reconciliation process.
 
 .. seealso::
    - :doc:`/applications/inventory_and_mrp/purchase/manage_deals/manage`
-   - :doc:`/applications/finance/accounting/bank/reconciliation/use_cases`
+   - :doc:`/applications/finance/accounting/bank/reconciliation`
 
 Group payments
 ==============

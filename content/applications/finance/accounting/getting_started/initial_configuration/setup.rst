@@ -74,7 +74,7 @@ filling out the form.
 .. note::
    - You can add as many bank accounts as needed with this tool by going to :menuselection:`Accounting
      --> Configuration`, and clicking on *Add a Bank Account*.
-   - :doc:`Click here <../../bank/setup/bank_accounts>` for more information about Bank
+   - :doc:`Click here <../../bank>` for more information about Bank
      Accounts.
 
 .. _accounting-setup-periods:
@@ -186,7 +186,7 @@ Sample Invoice
 Send yourself a sample invoice by email to make sure everything is correctly configured.
 
 .. seealso::
-   * :doc:`../../bank/setup/bank_accounts`
+   * :doc:`../../bank`
    * :doc:`chart_of_accounts`
    * :doc:`../../bank/bank_synchronization`
    * :doc:`../../../fiscal_localizations`

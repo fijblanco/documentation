@@ -122,7 +122,7 @@ Online payment acquirers
 
 .. note::
    Some of these online payment providers can also be added as :doc:`bank accounts
-   <../finance/accounting/bank/setup/bank_accounts>`, but this is **not** the same process as adding
+   <../finance/accounting/bank>`, but this is **not** the same process as adding
    them as payment acquirers. Payment acquirers allow customers to pay online, and bank accounts are
    added and configured on your Accounting app to do a bank reconciliation, which is an accounting
    control process.

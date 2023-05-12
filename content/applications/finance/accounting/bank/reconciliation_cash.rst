@@ -8,7 +8,7 @@ reconciled with a bank statement. It is possible to :ref:`bypass <cash-reconcili
 *In Payment* status for cash transactions, therefore removing the need to reconcile with a bank
 statement.
 
-.. image:: cash_transactions/cash-inpayment-status.png
+.. image:: reconciliation_cash/cash-inpayment-status.png
    :align: center
    :alt: In Payment status of invoice or bill.
 
@@ -18,7 +18,7 @@ Cash logs
 At the start of each day, create a **cash log**. To do so, go to your :guilabel:`Accounting
 Dashboard` and click :guilabel:`New Transaction` in the :guilabel:`Cash` journal.
 
-.. image:: cash_transactions/new-transaction.png
+.. image:: reconciliation_cash/new-transaction.png
    :align: center
    :alt: Create a new cash log.
 
@@ -27,7 +27,7 @@ Create your invoice by going to :menuselection:`Accounting dashboard --> Custome
 confirm it. Click :guilabel:`Register Payment` and select the cash :guilabel:`Journal`. Repeat the
 process for each invoice.
 
-.. image:: cash_transactions/cash-payment-journal.png
+.. image:: reconciliation_cash/cash-payment-journal.png
    :align: center
    :alt: Select Cash journal upon payment registration.
 
@@ -49,7 +49,7 @@ created earlier. To be able to match all cash payments, make sure no **partner**
 partner. Then, pair (or match) each cash payment with your cash log by clicking on the payment in
 the :guilabel:`Customer/Vendor Matching`, and :guilabel:`validate`.
 
-.. image:: cash_transactions/cash-payment-reconciliation.png
+.. image:: reconciliation_cash/cash-payment-reconciliation.png
    :align: center
    :alt: Cash payments reconciliation.
 
@@ -73,7 +73,7 @@ Configuration` tab and set a `Cash` account in both the :guilabel:`Outstanding R
 :guilabel:`Outstanding Payments Account` fields, then save. Payments registered in the **cash**
 journal now bypass the *In Payment* status.
 
-.. image:: cash_transactions/cash-payments-config.png
+.. image:: reconciliation_cash/cash-payments-config.png
    :align: center
    :alt: Configuration tab of the cash journal.
 

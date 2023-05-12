@@ -7,7 +7,7 @@ the main currency configured for your company. You can also set up bank accounts
 and run reports on your foreign currency activities.
 
 .. seealso::
-   - :doc:`../bank/setup/foreign_currency`
+   - :doc:`../bank/foreign_currency`
 
 .. _multi-currency/config:
 

@@ -14,7 +14,7 @@ amounts to reduce unpaid invoices/bills.
 
 .. seealso::
    - :doc:`Internal transfers <../../bank/interbank>`
-   - :doc:`../../bank/reconciliation/use_cases`
+   - :doc:`../../bank/reconciliation`
    - `Odoo Tutorials: Bank Configuration
      <https://www.odoo.com/slides/slide/bank-configuration-1880>`_
 
@@ -39,8 +39,8 @@ access additional information, such as the related journal, by clicking on :guil
      payment.
    - When clicking on :guilabel:`Register payment`, you can select the amount to pay and make a
      partial or full payment.
-   - If your main bank account is set as :doc:`outstanding account
-     <../../bank/setup/outstanding_accounts>`, and the payment is made in Odoo (not related to a
+   - If your main bank account is set as :ref:`outstanding account
+     <bank/outstanding-accounts>`, and the payment is made in Odoo (not related to a
      bank statement), invoices and bills are directly registered in the status :guilabel:`Paid`.
    - If you unreconciled a payment, it still appears in your books but is no longer linked to the
      invoice.
@@ -50,7 +50,7 @@ access additional information, such as the related journal, by clicking on :guil
      automatically created to post the cash basis tax (reversal) amount.
 
 .. seealso::
-   - :doc:`../../bank/reconciliation/use_cases`
+   - :doc:`../../bank/reconciliation`
 
 Registering payments not tied to an invoice or bill
 ===================================================
@@ -75,13 +75,13 @@ The invoice or bill is now marked as :guilabel:`In payment` until it is reconcil
 statement.
 
 .. seealso::
-   - :doc:`../../bank/reconciliation/use_cases`
+   - :doc:`../../bank/reconciliation`
 
 Batch payment
 -------------
 
 Batch payments allow you to group different payments to ease :doc:`reconciliation
-<../../bank/reconciliation/use_cases>`. They are also useful when you deposit checks to the bank or
+<../../bank/reconciliation>`. They are also useful when you deposit checks to the bank or
 for SEPA Payments. To do so, go to :menuselection:`Accounting --> Customers --> Batch Payments` or
 :menuselection:`Accounting --> Vendors --> Batch Payments`. In the list view of payments, you can
 select several payments and group them in a batch by clicking on :menuselection:`Action --> Create
@@ -101,7 +101,7 @@ Customer Invoices / Vendor Bills`, and click on :guilabel:`⋮` and select :guil
 Matching`, or by going to :menuselection:`Accounting --> Reconciliation`.
 
 .. note::
-   During the :doc:`reconciliation <../../bank/reconciliation/use_cases>`, if the sum of the debits
+   During the :doc:`reconciliation <../../bank/reconciliation>`, if the sum of the debits
    and credits does not match, there is a remaining balance. This either needs to be reconciled at a
    later date or needs to be written off directly.
 
@@ -125,4 +125,4 @@ next step is to reconcile it with the related bank statement line to have the tr
 and the invoice or bill marked as :guilabel:`Paid`.
 
 .. seealso::
-   - :doc:`../../bank/reconciliation/use_cases`
+   - :doc:`../../bank/reconciliation`

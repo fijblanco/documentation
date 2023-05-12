@@ -15,7 +15,7 @@ Settings` and then under the :guilabel:`Default Accounts` section.
 
 .. note::
    At least two bank accounts are needed to make internal transfers. Refer to
-   :doc:`Bank and cash accounts section <setup/bank_accounts>` to see how to add an additional bank
+   :doc:`Bank and cash accounts section <../bank>` to see how to add an additional bank
    account to your database.
 
 Register an internal transfer from one bank to another
@@ -100,7 +100,7 @@ The next step is to book the bank statements to finalize the transaction by crea
    :alt: Transaction lines to be filled in prior to reconciliation
 
 .. seealso::
-   :doc:`reconciliation/use_cases`
+   :doc:`reconciliation`
 
 In the next window, choose counterparts for the payment - in this example, the outstanding payment
 account - then click :guilabel:`Validate`.

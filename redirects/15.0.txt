@@ -1,5 +1,12 @@
 # applications/finance
 
+applications/finance/accounting/bank/reconciliation/cash_transactions.rst applications/finance/accounting/bank/reconciliation_cash.rst             # bank/reconciliation/cash_transactions -> bank/reconciliation_cash
+applications/finance/accounting/bank/reconciliation/reconciliation_models.rst applications/finance/accounting/bank/reconciliation_models.rst       # bank/reconciliation/* -> bank/*
+applications/finance/accounting/bank/reconciliation/use_cases.rst applications/finance/accounting/bank/reconciliation.rst                          # reconciliation/use_cases -> reconciliation
+applications/finance/accounting/bank/setup/bank_accounts.rst applications/finance/accounting/bank.rst                                              # bank/setup/bank_accounts -> bank
+applications/finance/accounting/bank/setup/foreign_currency.rst applications/finance/accounting/bank/foreign_currency.rst                          # bank/setup/* -> bank/*
+applications/finance/accounting/bank/setup/manage_cash_register.rst applications/finance/accounting/bank/cash_register.rst                         # bank/setup/manage_cash_register -> bank/cash_register
+applications/finance/accounting/bank/setup/outstanding_accounts.rst applications/finance/accounting/bank.rst                                       # bank/setup/outstanding_accounts -> bank
 applications/finance/accounting/others/adviser/budget.rst applications/finance/accounting/reporting/budget.rst                                     # others/adviser/* -> reporting/*
 applications/finance/accounting/others/analytic/purchases_expenses.rst applications/finance/accounting/reporting/analytic/purchases_expenses.rst   # others/analytic/* -> reporting/analytic/*
 applications/finance/accounting/others/analytic/timesheets.rst applications/finance/accounting/reporting/analytic/timesheets.rst                   # others/analytic/* -> reporting/analytic/*
