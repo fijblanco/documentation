@@ -183,7 +183,7 @@ To do so, check the :guilabel:`Deprecated` box in the account's settings, and sa
 
 .. seealso::
    * :doc:`../cheat_sheet`
-   * :doc:`../../payables/supplier_bills/assets`
-   * :doc:`../../payables/supplier_bills/deferred_expenses`
+   * :doc:`../../payables/assets`
+   * :doc:`../../payables/deferred_expenses`
    * :doc:`../../receivables/customer_invoices/deferred_revenues`
    * :doc:`../../../fiscal_localizations`

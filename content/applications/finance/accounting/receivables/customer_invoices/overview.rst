@@ -159,4 +159,4 @@ Vendor bills and customer invoices forms are automatically created and populated
 invoices.
 
 .. seealso::
-   - :doc:`/applications/finance/accounting/payables/supplier_bills/invoice_digitization`
+   - :doc:`/applications/finance/accounting/payables/invoice_digitization`
