@@ -4,34 +4,118 @@ Inventory adjustments
 
 In any warehouse management system, the recorded inventory counts in the database might not always
 match the actual inventory counts in the warehouse. The discrepancy between the two counts can be
-due to theft, damages, human errors, or other factors. As such, inventory adjustments must be made
+due to damages, human errors, theft, or other factors. As such, inventory adjustments must be made
 to reconcile the differences, and ensure that the recorded counts in the database match the actual
 counts in the warehouse.
 
-In Odoo, inventory adjustments can be accessed through :menuselection:`Inventory --> Operations -->
-Inventory Adjustments`.
+View inventory adjustments page
+===============================
 
-The :guilabel:`Inventory Adjustments` page shows all products that are currently in stock. Each
-line contains the following information:
+To view the :guilabel:`Inventory Adjustments` page, navigate to :menuselection:`Inventory app -->
+Operations --> Inventory Adjustments`.
 
-- :guilabel:`Product`
-- :guilabel:`Lot/Serial Number`
-- :guilabel:`On Hand Quantity`
+On the :guilabel:`Inventory Adjustments` page, all products that are currently in stock are listed,
+with each product line containing the following information:
+
+.. image:: count_products/count-products-inventory-adjustments-page.png
+   :align: center
+   :alt: Inventory adjustments page.
+
+- :guilabel:`Location`: the specific location in the warheouse where a product is stored.
+- :guilabel:`Product`: the product whose quantity is listed on the inventory adjustment line.
+- :guilabel:`Lot/Serial Number`: the specific tracking identifier assigned to the specific product
+  listed. It can contain letters, numbers, or a combination of both.
+
+.. note::
+   If a specific product has a quantity of more than `1.00` in stock, and more than one serial
+   number or lot number assigned to it, each uniquely-identified product will display on its own
+   product line with its own lot/serial number, displayed under the :guilabel:`Lot/Serial Number`
+   column.
+
+- :guilabel:`On Hand Quantity`: the quantity of the product currently recorded in the database.
+- :guilabel:`UoM`: the *unit of measure* the product is measured in. Unless otherwise specified
+  (i.e., in **pounds** or **ounces**), the default :abbr:`UoM (unit of measure)` will be **Units**.
+- :guilabel:`Counted Quantity`: the real quantity counted during an inventory count. This field will
+  be blank by default, but can be changed depending on if it matches the :guilabel:`On Hand
+  Quantity` or not.
+- :guilabel:`Difference`: the difference between the :guilabel:`On Hand Quantity` and
+  :guilabel:`Counted Quantity` once an inventory adjustment has been made.
+- :guilabel:`Scheduled Date`: the date at which a count should be made. If not otherwise specified,
+  this date will default to the 31st of December of the current year.
+- :guilabel:`User`: the person assigned to the count in the database. This can either be the person
+  physically counting the inventory, or applying the count in the database.
+- :guilabel:`Product Category`: the category assigned internally to a specific product. Unless
+  otherwise specified (i.e., as **Consumable** or **Rental**), the default *product category* will
+  be *All*.
+- :guilabel:`Available Quantity`: the quantity of a specific product that is currently available,
+  based on any outstanding/uncompleted sales orders, purchase orders, or manufacturing orders that
+  might change the available quantity once fulfilled.
+- :guilabel:`Accounting Date`: the date on which the adjustments will be accounted in the Odoo
+  *Accounting* app.
+- :guilabel:`Company`: the company whose database these inventory adjustments are being made on. The
+  company is listed in the top right corner of the database, next to the user currently logged in.
+
+.. tip::
+   Some columns are hidden by default. To reveal these columns, click the :guilabel:`additional
+   options` button (three dots icon, at the top right of the header row), and select any desired
+   column to reveal by clicking the :guilabel:`checkbox` next to that option.
 
 Add a new line
-==============
+--------------
 
-To add an inventory adjustment line, click :guilabel:`Create` and fill in the :guilabel:`Product`
-and :guilabel:`Counted Quantity` fields. Then click :guilabel:`Save`.
+To create a new inventory adjustment from the :guilabel:`Inventory Adjustments` page, click
+:guilabel:`Create`. Doing so creates a new, blank inventory adjustment line at the bottom of the
+page.
 
-At this stage, the count is recorded but not yet *applied*. Meaning the quantity on hand is not yet
-updated to match the new :guilabel:`Counted Quantity`.
+On this blank inventory adjustment line, click the drop-down menu under the :guilabel:`Product`
+column, and select a product from the drop-down menu. If the selected product is tracked using
+either lots or serial numbers, the desired lot or serial number can also be chosen from the
+drop-down menu under the :guilabel:`Lot/Serial Number` column.
 
-To apply the new :guilabel:`Counted Quantity`, click :guilabel:`Apply` on the line or the
-:guilabel:`Apply All` button on the top of the page. If :guilabel:`Apply All` is clicked, a
-reference or reason can be entered before clicking :guilabel:`Apply`.
+Next, set the value in the :guilabel:`Counted Quantity` column to the quantity counted for that
+product during the inventory adjustment process.
 
-.. image:: count_products/apply-inventory-adjustment.png
+.. note::
+   The :guilabel:`Counted Quantity` for new inventory adjustments is set to `0.00` by default. A
+   move with `0.00` :guilabel:`Quantity Done` will be recorded in the product's inventory adjustment
+   history, so it should be set to reflect the actual quantity counted.
+
+To the right of the :guilabel:`Counted Quality` column, the :guilabel:`Scheduled Date` and
+:guilabel:`User` can also be changed via their respective drop-down menus. Changing the scheduled
+date will change the date that the inventory adjustment should be processed on, and selecting a
+responsible user will assign a user to the specific inventory adjustment (for traceability
+purposes).
+
+Once all changes have been made to the new inventory adjustment line, click away from the line.
+Doing so will save the adjustment and move the line to the top of the page.
+
+If the :guilabel:`Counted Quantity` is greater than the :guilabel:`On Hand Quantity`, the value in
+the :guilabel:`Difference` column will be **green**. If the :guilabel:`Counted Quantity` is lesser
+than the :guilabel:`On Hand Quantity`, the value in the :guilabel:`Difference` column will be
+**red**. If the quantities match and haven't been changed at all, no value will appear in the
+:guilabel:`Difference` column.
+
+.. image:: count_products/count-products-difference-column.png
+   :align: center
+   :alt: Difference column on inventory adjustments page.
+
+At this stage, the count (:dfn:`inventory adjustment`) is recorded, but not yet **applied**. This
+means that the quantity on hand before the adjustment has not yet been updated to match the new,
+real counted quantity.
+
+There are two ways to apply the new inventory adjustment. The first way is to click the
+:guilabel:`Apply` button on the line at the far right of the page. The second way is to click the
+:guilabel:`checkbox` on the far left of the line. Doing so reveals new button options at the top of
+the page, one of which is an :guilabel:`Apply` button. Clicking this button instead causes an
+:guilabel:`Inventory Adjustment Reference / Reason` pop-up to appear.
+
+From this pop-up menu, a reference or reason can be assigned to the inventory adjustment. By
+default, this will be pre-populated with the date the adjustment is being made on, but can be
+changed to reflect whatever reference or reason is desired.
+
+Once ready, click :guilabel:`Apply` to apply the inventory adjustment.
+
+.. image:: count_products/count-products-apply-inventory-adjustment.png
    :scale: 60%
    :align: center
    :alt: Apply all option applies the inventory adjustment once a reason is specified.
@@ -40,61 +124,111 @@ Count products
 ==============
 
 Counting products is a recurring activity in a warehouse. Once a count is complete, go to
-:menuselection:`Inventory --> Operations --> Inventory Adjustments` to update the
+:menuselection:`Inventory app --> Operations --> Inventory Adjustments` to update the
 :guilabel:`Counted Quantity` column for each product line.
 
-If a count matches the :guilabel:`On Hand Quantity` recorded in the database, click on
-:guilabel:`Set`, which will copy the value in the :guilabel:`On Hand Quantity` field and paste it
-in the :guilabel:`Counted Quantity` field. A move with `0.00` :guilabel:`Quantity Done` will be
-recorded in the product's inventory adjustment history.
+On each product line, identify whether the value in the :guilabel:`On Hand Quantity` column recorded
+in the database matches the newly-counted value. If the recorded value and the counted value do
+match, click the :guilabel:`Set` button (with the target icon, at the far right of the product
+line).
 
-If a count does *not* match the :guilabel:`On Hand Quantity` recorded in the database, record the
-count in the :guilabel:`Counted Quantity` field. When :guilabel:`Apply` is clicked, a move with the
-difference between the :guilabel:`On Hand Quantity` and :guilabel:`Counted Quantity` will be
-recorded in the product's inventory adjustment history.
+Doing so copies the value from the :guilabel:`On Hand Quantity` column over to the
+:guilabel:`Counted Quantity` column, and sets the value of the :guilabel:`Difference` column to
+`0.00`. Subsequently, once applied, a move with `0.00` :guilabel:`Quantity Done` will be recorded in
+the product's inventory adjustment history.
 
-.. image:: count_products/history-inventory-adjustments.png
+.. image:: count_products/count-products-zero-move.png
+   :align: center
+   :alt: Zero count inventory adjustment move.
+
+If the newly-counted value for a given product does **not** match the value in the :guilabel:`On
+Hand Quantity` recorded in the database, instead of clicking the :guilabel:`Set` button, record the
+real value in the field in the :guilabel:`Counted Quantity` column.
+
+To do so, click the field in the :guilabel:`Counted Quantity` column on the specific inventory
+adjustment line for the product whose count is being changed. This will automatically assign a
+:guilabel:`Counted Quantity` of `0.00`.
+
+To change this value, type in a new value that matches the real, newly-counted value. Then, click
+away from the line. Doing so will save the adjustment, and automatically adjust the value in the
+:guilabel:`Difference` column.
+
+If the :guilabel:`Counted Quantity` is greater than the :guilabel:`On Hand Quantity`, the value in
+the :guilabel:`Difference` column will be **green**. If the :guilabel:`Counted Quantity` is lesser
+than the :guilabel:`On Hand Quantity`, the value in the :guilabel:`Difference` column will be
+**red**. If the quantities match and haven't been changed at all, no value will appear in the
+:guilabel:`Difference` column.
+
+Subsequently, once applied, a move with the difference between the :guilabel:`On Hand Quantity` and
+the :guilabel:`Counted Quantity` will be recorded in the product's inventory adjustment history.
+
+.. image:: count_products/count-products-history-inventory-adjustments.png
    :align: center
    :alt: Inventory Adjustments History dashboard detailing a list of prior product moves.
 
-.. note::
+.. important::
    Sometimes a count occurs, but can not be applied in the database right away. In the time between
    the actual count and applying the inventory adjustment, product moves can occur. In that case,
-   the :guilabel:`On Hand Quantity` in the database can change and will not be consistent with the
-   counted quantity. As an extra caution measure, Odoo will ask for confirmation before applying
-   the inventory adjustment.
+   the on hand quantity in the database can change and will not be consistent with the counted
+   quantity. As an extra precaution, Odoo will ask for confirmation before applying the inventory
+   adjustment.
 
-Plan counts
-===========
+Change inventory count frequency
+================================
 
-Each inventory adjustment line contains the following information:
+By default, the *scheduled date* for inventory adjustments are always scheduled for the 31st of
+December of the current year. However, for some companies, it is crucial that they have an accurate
+inventory count at all times. In such cases, the default scheduled date can be modified.
 
-- :guilabel:`Scheduled Date`: the date at which a count should be made.
-- :guilabel:`User`: the person in charge of the count.
-- :guilabel:`Accounting Date`: the date at which the adjustments will be accounted. The column is
-  hidden by default, but can be made visible by opening the column options icon.
+To modify the default scheduled date, go to :menuselection:`Inventory app --> Configuration -->
+Settings`. Then, in the :guilabel:`Operations` section, locate the :guilabel:`Annual Inventory Day
+and Month` setting field, which includes a drop-down that is set to `31 December` by default.
 
-.. important::
-   In the Barcode app, users can only view counts assigned to them that are scheduled for today or
-   earlier.
+.. image:: count_products/count-products-annual-inventory.png
+   :align: center
+   :alt: Adjust the next inventory count date with the Annual Inventory Day and Month setting.
 
-To plan big counts, select the desired product lines on the :guilabel:`Inventory Adjustments` page.
-Then, click :guilabel:`Request a Count` and fill in the following information:
+To change the day, click the :guilabel:`31`, and change it to a day within the range `1-31`,
+depending on the desired month of the year.
+
+Then, to change the month, click :guilabel:`December` to reveal the drop-down menu, and select the
+desired month.
+
+Once all desired changes have been made, click :guilabel:`Save` to save all changes.
+
+Plan big inventory counts
+-------------------------
+
+To plan big inventory counts, such as a full count of everything currently in stock, first navigate
+to :menuselection:`Inventory app --> Operations --> Inventory Adjustments`.
+
+Then, select the desired products to be counted by clicking the :guilabel:`checkbox` on the far left
+of each product line.
+
+.. tip::
+   To request a count of **all** products currently in stock, click the :guilabel:`checkbox` at the
+   very top, next to :guilabel:`Location` in the header row. This selects **all** product lines.
+
+Once all desired products have been selected, click the :guilabel:`Request A Count` button at the
+top of the page. This causes a :guilabel:`Request a Count` pop-up to appear. From this pop-up, fill
+in the following information:
+
+.. image:: count_products/count-products-count-popup.png
+   :align: center
+   :alt: Request a count popup on inventory adjustments page.
 
 - :guilabel:`Inventory Date`: the planned date of the count.
 - :guilabel:`User`: the user responsible for the count.
 - :guilabel:`Accounting Date`: the date at which the inventory adjustment will be accounted.
-- :guilabel:`Count`: to leave the :guilabel:`On Hand Quantity` of each product line blank, select
-  :guilabel:`Leave Empty`. To prefill the :guilabel:`On Hand Quantity` of each product line with
-  the current value recorded in the database, select :guilabel:`Set Current Value`.
+- :guilabel:`Count`: to leave the on hand quantity of each product line blank, select
+  :guilabel:`Leave Empty`. To prefill the on hand quantity of each product line with the current
+  value recorded in the database, select :guilabel:`Set Current Value`.
 
-Finally, click :guilabel:`Confirm` to request the count.
+Finally, once ready, click :guilabel:`Confirm` to request the count.
 
-By default, after an inventory adjustment is applied, the scheduled date for the next count is the
-31st of December of the current year. To modify the default scheduled date, go to
-:menuselection:`Inventory --> Configuration --> Settings --> Operations` and change the date in the
-:guilabel:`Annual Inventory Day and Month` setting.
+.. important::
+   In the Odoo *Barcode* app, users can only view inventory counts that are assigned to **them**,
+   and that are scheduled for **today** or **earlier**.
 
-.. image:: count_products/annual-inventory.png
-   :align: center
-   :alt: Adjust the next inventory count date with the Annual Inventory Day and Month setting.
+.. seealso::
+   :doc:`/applications/inventory_and_mrp/inventory/management/inventory_adjustments/cycle_counts`
