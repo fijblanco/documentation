@@ -44,8 +44,7 @@ upload the signed file and click on :guilabel:`Validate` to start running the ma
 
 .. important::
    Make sure that the **IBAN bank accounts details** are correctly recorded on the debtor’s contact
-   form, under the :guilabel:`Accounting` tab, and in your own :doc:`Bank Account
-   <../../bank>` settings.
+   form, under the :guilabel:`Accounting` tab, and in your own :doc:`Bank Account <../bank>` settings.
 
 SEPA Direct Debit as a payment method
 -------------------------------------
@@ -120,7 +119,7 @@ Finally, upload this file to your online banking interface to process the paymen
 
 .. seealso::
    * :doc:`batch`
-   * :doc:`../../bank`
+   * :doc:`../bank`
    * `List of all SEPA countries
      <https://www.europeanpaymentscouncil.eu/document-library/other/epc-list-sepa-scheme-countries>`_
    * `Sepa guidelines

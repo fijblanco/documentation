@@ -1,6 +1,8 @@
-==================================
-Different ways to record a payment
-==================================
+:show-content:
+
+========
+Payments
+========
 
 In Odoo, payments can either be linked automatically to an invoice or bill or be stand-alone records
 for use at a later date.
@@ -13,8 +15,19 @@ your company, or your company has an outstanding debit with a vendor. You can us
 amounts to reduce unpaid invoices/bills.
 
 .. seealso::
-   - :doc:`Internal transfers <../../bank/interbank>`
-   - :doc:`../../bank/reconciliation`
+   - :doc:`payments/online`
+   - :doc:`payments/checks`
+   - :doc:`payments/batch`
+   - :doc:`payments/batch_sdd`
+   - :doc:`payments/follow_up`
+   - :doc:`payments/pay_sepa`
+   - :doc:`payments/pay_checks`
+   - :doc:`payments/multiple`
+   - :doc:`payments/forecast`
+
+.. seealso::
+   - :doc:`Internal transfers <bank/interbank>`
+   - :doc:`bank/reconciliation`
    - `Odoo Tutorials: Bank Configuration
      <https://www.odoo.com/slides/slide/bank-configuration-1880>`_
 
@@ -30,8 +43,7 @@ with a bank statement line, the invoice or vendor bill changes to the :guilabel:
 The information icon near the payment line displays more information about the payment. You can
 access additional information, such as the related journal, by clicking on :guilabel:`View`.
 
-.. image:: recording/information-icon.png
-   :align: center
+.. image:: payments/information-icon.png
    :alt: See detailed information of a payment
 
 .. note::
@@ -50,7 +62,7 @@ access additional information, such as the related journal, by clicking on :guil
      automatically created to post the cash basis tax (reversal) amount.
 
 .. seealso::
-   - :doc:`../../bank/reconciliation`
+   - :doc:`bank/reconciliation`
 
 Registering payments not tied to an invoice or bill
 ===================================================
@@ -67,29 +79,28 @@ A blue banner appears when you validate a new invoice or bill and there is an ou
 for this specific customer or vendor. It can easily be matched from the invoice or the bill by
 clicking on :guilabel:`ADD` under :guilabel:`Outstanding Credits` or :guilabel:`Outstanding Debits`.
 
-.. image:: recording/add-option.png
-   :align: center
+.. image:: payments/add-option.png
    :alt: Shows the ADD option to reconcile an invoice or a bill with a payment
 
 The invoice or bill is now marked as :guilabel:`In payment` until it is reconciled with the bank
 statement.
 
 .. seealso::
-   - :doc:`../../bank/reconciliation`
+   - :doc:`bank/reconciliation`
 
 Batch payment
 -------------
 
 Batch payments allow you to group different payments to ease :doc:`reconciliation
-<../../bank/reconciliation>`. They are also useful when you deposit checks to the bank or
+<bank/reconciliation>`. They are also useful when you deposit checks to the bank or
 for SEPA Payments. To do so, go to :menuselection:`Accounting --> Customers --> Batch Payments` or
 :menuselection:`Accounting --> Vendors --> Batch Payments`. In the list view of payments, you can
 select several payments and group them in a batch by clicking on :menuselection:`Action --> Create
 Batch Payment`.
 
 .. seealso::
-  - :doc:`../../receivables/customer_payments/batch`
-  - :doc:`../../receivables/customer_payments/batch_sdd`
+  - :doc:`payments/batch`
+  - :doc:`payments/batch_sdd`
 
 Payments matching
 -----------------
@@ -101,7 +112,7 @@ Customer Invoices / Vendor Bills`, and click on :guilabel:`⋮` and select :guil
 Matching`, or by going to :menuselection:`Accounting --> Reconciliation`.
 
 .. note::
-   During the :doc:`reconciliation <../../bank/reconciliation>`, if the sum of the debits
+   During the :doc:`reconciliation <bank/reconciliation>`, if the sum of the debits
    and credits does not match, there is a remaining balance. This either needs to be reconciled at a
    later date or needs to be written off directly.
 
@@ -113,8 +124,7 @@ the batch reconciliation feature can be used. Go to :menuselection:`Accounting -
 Aged Receivable / Aged Payable`. You now see all transactions that have not been reconciled yet, and
 when you select a customer or vendor, the :guilabel:`Reconcile` option is displayed.
 
-.. image:: recording/reconcile-option.png
-   :align: center
+.. image:: payments/reconcile-option.png
    :alt: See the reconcile option
 
 Reconciling payments with bank statements
@@ -125,4 +135,17 @@ next step is to reconcile it with the related bank statement line to have the tr
 and the invoice or bill marked as :guilabel:`Paid`.
 
 .. seealso::
-   - :doc:`../../bank/reconciliation`
+   - :doc:`bank/reconciliation`
+
+.. toctree::
+   :titlesonly:
+
+   payments/online
+   payments/checks
+   payments/batch
+   payments/batch_sdd
+   payments/follow_up
+   payments/pay_sepa
+   payments/pay_checks
+   payments/multiple
+   payments/forecast

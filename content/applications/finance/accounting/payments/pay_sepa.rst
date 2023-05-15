@@ -54,8 +54,7 @@ SCT option when paying your vendor.
 
 .. note::
    According to the localization package installed, the **SEPA Direct Debit** and **SEPA Credit
-   Transfer** modules may be installed by default. If not, they need to be :doc:`installed
-   <../../../../general/apps_modules>`.
+   Transfer** modules may be installed by default. If not, they need to be :ref:`installed <general/install>`.
 
 Activate SEPA payment methods on banks
 --------------------------------------

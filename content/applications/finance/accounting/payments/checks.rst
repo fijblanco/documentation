@@ -1,6 +1,6 @@
-====================================
-Register customer payments by checks
-====================================
+======
+Checks
+======
 
 There are two ways to handle payments received by checks. Odoo support
 both approaches so that you can use the one that better fits your
@@ -59,8 +59,7 @@ on **Register Payment**. Fill in the information about the payment:
 
 -  Memo: write the Check number
 
-.. image:: check/check02.png
-  :align: center
+.. image:: checks/check02.png
 
 This operation will produce the following journal entry:
 
@@ -115,8 +114,7 @@ on **Register Payment**. Fill in the information about the payment:
 
 -  Memo: write the check number
 
-.. image:: check/check03.png
-  :align: center
+.. image:: checks/check03.png
 
 The invoice is marked as paid as soon as you record the check.
 
@@ -147,5 +145,4 @@ report **Bank Reconciliation Report** to verify which checks have been
 received or paid by the bank. (this report is available from the **More**
 option from the Accounting dashboard on the related bank account).
 
-.. image:: check/check01.png
-  :align: center
+.. image:: checks/check01.png

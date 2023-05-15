@@ -25,6 +25,7 @@ accounts, smart matching suggestions, etc.
    accounting/getting_started
    accounting/receivables
    accounting/payables
+   accounting/payments
    accounting/bank
    accounting/taxation
    accounting/reporting

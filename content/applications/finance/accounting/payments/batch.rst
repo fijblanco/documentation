@@ -41,7 +41,7 @@ Deposit multiple payments in batch
 Record payments to deposit in batch
 -----------------------------------
 
-:doc:`Register the payments <recording>` on the bank account on which you plan to deposit them by
+:doc:`Register the payments <../payments>` on the bank account on which you plan to deposit them by
 opening the *Customer Invoice* for which you received a payment, and clicking on *Register Payment*.
 There, select the appropriate Journal linked to your bank account and select *Batch Deposit* as
 Payment Method.
@@ -96,5 +96,5 @@ If a check, or a payment, couldn't be processed by the bank and is missing, remo
 payment before validating the bank reconciliation.
 
 .. seealso::
-   - :doc:`recording`
+   - :doc:`../payments`
    - :doc:`batch_sdd`
