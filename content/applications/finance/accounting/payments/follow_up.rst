@@ -97,4 +97,4 @@ select :guilabel:`Process follow-ups`.
 .. seealso::
    - :doc:`../../../general/in_app_purchase`
    - :doc:`../../../marketing/sms_marketing/pricing/pricing_and_faq`
-   - :doc:`../receivables/customer_invoices/snailmail`
+   - :doc:`../receivables/snailmail`

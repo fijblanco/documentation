@@ -9,7 +9,7 @@ with **recurrent entries** such as bank fees.
 
 .. note::
    Reconciliation models are also useful when handling *Cash Discounts*. Please refer to
-   :doc:`the cash discounts <../receivables/customer_invoices/cash_discounts>` for more
+   :doc:`the cash discounts <../receivables/cash_discounts>` for more
    information.
 
 .. _reconciliation_models_types:
@@ -123,4 +123,4 @@ second time.
 
    - :doc:`reconciliation`
    - :doc:`bank_synchronization`
-   - :doc:`../receivables/customer_invoices/cash_discounts`
+   - :doc:`../receivables/cash_discounts`

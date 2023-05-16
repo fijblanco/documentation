@@ -354,7 +354,7 @@ EDI Elements
 
 Once you have configured your master data, the invoices can be created from your sales order or
 manually. Additional to the basic invoice information described on :doc:`our page about the
-invoicing process <../accounting/receivables/customer_invoices/overview>`, there are a couple of
+invoicing process <../accounting/receivables/overview>`, there are a couple of
 fields required as part of the Peru EDI:
 
 - **Document type**: The default value is “Factura Electronica” but  you can manually change the
@@ -572,7 +572,7 @@ By default the Credit Note is set in the document type:
    :alt: Credit Note document type
 
 To finish the workflow please follow the instructions on :doc:`our page about Credit Notes
-<../accounting/receivables/customer_invoices/credit_notes>`.
+<../accounting/receivables/credit_notes>`.
 
 .. note::
    The EDI workflow for the Credit notes works in the same way as the invoices.

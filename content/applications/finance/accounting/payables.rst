@@ -141,7 +141,7 @@ while you're looking through the report, you can print directly to Excel
 or PDF and get exactly what you see on the screen.
 
 .. seealso::
-    * :doc:`getting_started/process_overview/customer_invoice`
+    * :doc:`receivables`
 
 .. toctree::
    :titlesonly:
