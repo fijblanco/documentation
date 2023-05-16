@@ -118,6 +118,6 @@ report to the tax authorities, along with the amount you have to pay or be refun
    date manually before, as described above.
 
 .. seealso::
-   * :doc:`../taxation/taxes/taxes`
+   * :doc:`../taxes`
    * :doc:`../getting_started`
    * :doc:`../../fiscal_localizations`

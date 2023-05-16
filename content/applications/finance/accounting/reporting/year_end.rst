@@ -1,6 +1,6 @@
-===========================================
-Do a year end in Odoo (close a fiscal year)
-===========================================
+================
+Year-end closing
+================
 
 Before going ahead with closing a fiscal year, there are a few steps one
 should typically take to ensure that your accounting is correct, up to
@@ -18,6 +18,31 @@ date, and accurate:
 
 - Corroborate that all **received payments** have been entered and
   recorded accurately.
+
+.. _year-end/fiscal-years:
+
+Manage fiscal years
+===================
+
+In most cases, the fiscal years last 12 months. If it is your case, you
+just have to define what is the last day of your fiscal year in the
+accounting settings. By default, it is set on the 31st December.
+
+However, there might be some exceptions. For example, if it is the first
+fiscal year of your business, it could last more or less than 12 months.
+In this case, some additional configuration is required.
+
+Go to :menuselection:`accounting --> configuration --> settings` and activate
+the fiscal years.
+
+You can then configure your fiscal years in
+:menuselection:`accounting --> configuration --> fiscal years`.
+
+.. note::
+    You only have to create fiscal years if they last more or less
+    than 12 months.
+
+.. _year-end/checklist:
 
 Year-end checklist
 ==================
@@ -70,8 +95,9 @@ set under the accounting configuration. This way, the accountant can be
 confident that nobody is changing the previous year transactions
 while auditing the books.
 
-.. image:: close_fiscal_year/close_fiscal_year01.png
-   :align: center
+.. image:: year_end/close_fiscal_year01.png
+
+.. _year-end/closing:
 
 Closing the fiscal year
 =======================
@@ -88,6 +114,3 @@ the **Current Year Earnings**, you should set the **Lock Date** to the last day
 of the fiscal year. Making sure that before doing so, you confirm
 whether or not the current year earnings in the **Balance Sheet** is
 correctly reporting a 0 balance.
-
-.. seealso::
-  * :doc:`fiscal_year`

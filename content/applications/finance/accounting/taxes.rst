@@ -1,3 +1,5 @@
+:show-content:
+
 =====
 Taxes
 =====
@@ -5,6 +7,41 @@ Taxes
 There are numerous types of **taxes**, and their application varies greatly, depending mostly on
 your company's localization. To make sure they are recorded with accuracy, Odoo's tax engine
 supports all kinds of uses and computations.
+
+.. seealso::
+
+   -:doc:`taxes/cash_basis_taxes`
+   -:doc:`taxes/retention`
+   -:doc:`taxes/vat_validation`
+   -:doc:`taxes/fiscal_positions`
+   -:doc:`taxes/avatax`
+   -:doc:`taxes/taxcloud`
+   -:doc:`taxes/eu_distance_selling`
+   -:doc:`taxes/B2B_B2C`
+
+.. _taxes/default:
+
+Default taxes
+=============
+
+**Default Taxes** define which taxes are automatically selected when there is no
+other indication about which tax to use. For example, Odoo prefills the **Taxes** field with the
+Default Taxes when you create a new product or add a new line on an invoice.
+
+.. image:: taxes/default-invoice-line.png
+   :alt: Odoo fills out the Tax field automatically according to the Default Taxes
+
+To change your **Default Taxes**, go to :menuselection:`Accounting --> Configuration --> Settings
+--> Taxes --> Default Taxes`, select the appropriate taxes for your default **Sales Tax** and
+**Purchase Tax**, and click on *Save*.
+
+.. image:: taxes/default-configuration.png
+   :alt: Define which taxes to use by default on Odoo
+
+.. note::
+   **Default Taxes** are automatically set up according to the country selected at the creation of
+   your database, or when you set up a :ref:`fiscal localization package
+   <fiscal_localizations/packages>` for your company.
 
 .. _taxes/list_activation:
 
@@ -18,8 +55,7 @@ activated by default, so that you can activate only the ones relevant for your b
 To activate Sale Taxes, go to :menuselection:`Accounting --> Configuration --> Taxes` and use the
 *Activate* toggle button to activate or deactivate a tax.
 
-.. image:: taxes/taxes-list.png
-   :align: center
+.. image:: taxes/list.png
    :alt: Activate pre-configured taxes in Odoo Accounting
 
 .. _taxes/configuration:
@@ -30,8 +66,7 @@ Configuration
 To edit or create a **Tax**, go to :menuselection:`Accounting --> Configuration --> Taxes` and open
 a tax or click on *Create*.
 
-.. image:: taxes/taxes-edit.png
-   :align: center
+.. image:: taxes/edit.png
    :alt: Edition of a tax in Odoo Accounting
 
 .. _taxes/labels:
@@ -155,8 +190,7 @@ Definition tab
 Allocate with precision the amount of the taxable basis or percentages of the computed tax to
 multiple accounts and Tax Grids.
 
-.. image:: taxes/taxes-definition.png
-   :align: center
+.. image:: taxes/definition.png
    :alt: Allocate tax amounts to the right accounts and tax grids
 
 - **Based On**:
@@ -165,7 +199,7 @@ multiple accounts and Tax Grids.
   - % of tax: a percentage of the computed tax.
 
 - **Account**: if defined, an additional Journal Item is recorded.
-- **Tax Grids**:  used to generate :doc:`Tax Reports <../../reporting/tax_returns>`
+- **Tax Grids**:  used to generate :doc:`Tax Reports <reporting/tax_returns>`
   automatically, according to your country's regulations.
 
 .. _taxes/advanced-tab:
@@ -182,8 +216,7 @@ The label of the tax, as displayed on each invoice line in the **Taxes** column.
 :ref:`label <taxes/labels>` visible to *front end* users, on exported invoices, on their Customer
 Portals, etc.
 
-.. image:: taxes/taxes-invoice-label.png
-   :align: center
+.. image:: taxes/invoice-label.png
    :alt: The Label on Invoices is displayed on each invoice line
 
 .. _taxes/tax-group:
@@ -195,10 +228,9 @@ Select to which **Tax Group** the tax belongs. The Tax Group name is the :ref:`l
 <taxes/labels>` displayed above the *Total* line on exported invoices, and the Customer Portals.
 
 Tax groups include different iterations of the same tax. This can be useful when you must record
-differently the same tax according to :doc:`Fiscal Positions <fiscal_positions>`.
+differently the same tax according to :doc:`Fiscal Positions <taxes/fiscal_positions>`.
 
-.. image:: taxes/taxes-invoice-tax-group.png
-   :align: center
+.. image:: taxes/invoice-tax-group.png
    :alt: The Tax Group name is different from the Label on Invoices
 
 In the example above, we see a 0% tax for Intra-Community customers in Europe. It records amounts on
@@ -235,7 +267,7 @@ For example, a product has a Sales Price of $1000, and we apply a *10% of Price*
 
 .. note::
    If you need to define prices accurately, both tax-included and tax-excluded, please refer to the
-   following documentation: :doc:`B2B_B2C`.
+   following documentation: :doc:`taxes/B2B_B2C`.
 
 .. note::
    - **Invoices**: By default, the Line Subtotals displayed on your invoices are *Tax-Excluded*. To
@@ -257,8 +289,7 @@ the same product.
 You can configure a new :ref:`Group of Taxes <taxes/computation>` to include this tax, or add it
 directly to a product line.
 
-.. image:: taxes/taxes-subsequent-line.png
-   :align: center
+.. image:: taxes/subsequent-line.png
    :alt: The eco-tax is taken into the basis of the 21% VAT tax
 
 .. warning::
@@ -269,13 +300,24 @@ directly to a product line.
    To reorder the sequence, go to :menuselection:`Accounting --> Configuration --> Taxes`, and drag
    and drop the lines with the handles next to the tax names.
 
-   .. image:: taxes/taxes-list-sequence.png
-      :align: center
+   .. image:: taxes/list-sequence.png
       :alt: The taxes' sequence in Odoo determines which tax is applied first
 
 .. seealso::
 
-  - :doc:`fiscal_positions`
-  - :doc:`B2B_B2C`
-  - :doc:`taxcloud`
-  - :doc:`../../reporting/tax_returns`
+  - :doc:`taxes/fiscal_positions`
+  - :doc:`taxes/B2B_B2C`
+  - :doc:`taxes/taxcloud`
+  - :doc:`reporting/tax_returns`
+
+.. toctree::
+   :titlesonly:
+
+   taxes/cash_basis_taxes
+   taxes/retention
+   taxes/vat_validation
+   taxes/fiscal_positions
+   taxes/avatax
+   taxes/taxcloud
+   taxes/eu_distance_selling
+   taxes/B2B_B2C

@@ -49,6 +49,18 @@ applications/finance/accounting/reporting/declarations/tax_returns.rst applicati
 applications/finance/accounting/reporting/overview/customize.rst applications/finance/accounting/reporting/customize.rst                           # reporting/overview/* -> reporting/*
 applications/finance/accounting/reporting/overview/data_inalterability.rst applications/finance/accounting/reporting/data_inalterability.rst       # reporting/overview/* -> reporting/*
 applications/finance/accounting/reporting/overview/main_reports.rst applications/finance/accounting/reporting.rst                                  # reporting/overview/main_reports -> reporting
+applications/finance/accounting/taxation/fiscal_year/close_fiscal_year.rst applications/finance/accounting/reporting/year_end.rst                  # taxation/fiscal_year/close_fiscal_year -> reporting/year_end
+applications/finance/accounting/taxation/fiscal_year/fiscal_year.rst applications/finance/accounting/reporting/year_end.rst                        # taxation/fiscal_year/fiscal_year -> reporting/year_end
+applications/finance/accounting/taxation/taxes/avatax.rst applications/finance/accounting/taxes/avatax.rst                                         # taxation/taxes/* -> taxes/*
+applications/finance/accounting/taxation/taxes/B2B_B2C.rst applications/finance/accounting/taxes/B2B_B2C.rst                                       # taxation/taxes/* -> taxes/*
+applications/finance/accounting/taxation/taxes/cash_basis_taxes.rst applications/finance/accounting/taxes/cash_basis_taxes.rst                     # taxation/taxes/* -> taxes/*
+applications/finance/accounting/taxation/taxes/default_taxes.rst applications/finance/accounting/taxes/default_taxes.rst                           # taxation/taxes/* -> taxes/*
+applications/finance/accounting/taxation/taxes/eu_distance_selling.rst applications/finance/accounting/taxes/eu_distance_selling.rst               # taxation/taxes/* -> taxes/*
+applications/finance/accounting/taxation/taxes/fiscal_positions.rst applications/finance/accounting/taxes/fiscal_positions.rst                     # taxation/taxes/* -> taxes/*
+applications/finance/accounting/taxation/taxes/retention.rst applications/finance/accounting/taxes/retention.rst                                   # taxation/taxes/* -> taxes/*
+applications/finance/accounting/taxation/taxes/taxcloud.rst applications/finance/accounting/taxes/taxcloud.rst                                     # taxation/taxes/* -> taxes/*
+applications/finance/accounting/taxation/taxes/taxes.rst applications/finance/accounting/taxes.rst                                                 # taxation/taxes/* -> taxes/*
+applications/finance/accounting/taxation/taxes/vat_validation.rst applications/finance/accounting/taxes/vat_validation.rst                         # taxation/taxes/* -> taxes/*
 
 # applications/general
 

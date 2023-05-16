@@ -21,7 +21,7 @@ accounts, smart matching suggestions, etc.
    - :doc:`accounting/payables`
    - :doc:`accounting/payments`
    - :doc:`accounting/bank`
-   - :doc:`accounting/taxation`
+   - :doc:`accounting/taxes`
    - :doc:`accounting/reporting`
 
 Double-entry bookkeeping
@@ -167,5 +167,5 @@ sheet report automatically.
    accounting/payables
    accounting/payments
    accounting/bank
-   accounting/taxation
+   accounting/taxes
    accounting/reporting

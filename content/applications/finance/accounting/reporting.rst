@@ -161,3 +161,4 @@ Bank Reconciliation
    reporting/data_inalterability
    reporting/silverfin
    reporting/customize
+   reporting/year_end

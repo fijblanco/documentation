@@ -189,7 +189,7 @@ Taxes
 
 .. seealso::
    - :ref:`Tax References <reference/account_tax>`
-   - :doc:`/applications/finance/accounting/taxation/taxes/taxes`
+   - :doc:`/applications/finance/accounting/taxes/`
 
 To add taxes you first need to specify tax groups. You normally need just one tax group for every tax rate, except for the 0% as you need to often distinguish between exempt, 0%, not subject, ... taxes.
 This model only has two required fields: *name* and *country*. Create the file :file:`data/account_tax_group_data.xml` and list the groups:
@@ -296,7 +296,7 @@ Fiscal positions
 
 .. seealso::
    - :ref:`Fiscal Position References <reference/account_fiscal_position>`
-   - :doc:`/applications/finance/accounting/taxation/taxes/fiscal_positions`
+   - :doc:`/applications/finance/accounting/taxes/fiscal_positions`
 
 Specify fiscal positions in the :file:`data/account_fiscal_position_template_data.xml` file.
 

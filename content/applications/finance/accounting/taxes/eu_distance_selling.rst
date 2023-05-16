@@ -10,7 +10,7 @@ which the goods or services are delivered.
 .. note::
    This remains true even if your organization is located outside of the European Union.
 
-While this regulation mainly applies to :doc:`eCommerce <../../../../websites/ecommerce>` sales to
+While this regulation mainly applies to :doc:`eCommerce <../../../websites/ecommerce>` sales to
 private EU consumers, it is also valid for mail order sales and telesales.
 
 The Union **One-Stop Shop (OSS)** is an online portal where businesses can register for the OSS and
@@ -18,7 +18,7 @@ declare their intra-community distance sales. Each EU member state integrates an
 
 The **EU intra-community Distance Selling** feature helps your organization comply with this
 regulation by creating and configuring new :doc:`fiscal positions <fiscal_positions>` and
-:doc:`taxes <taxes>` based on your company's country.
+:doc:`taxes <../taxes>` based on your company's country.
 
 .. seealso::
    - `European Commission: OSS | Taxation and Customs Union
@@ -66,4 +66,4 @@ Distance Selling` and click on the *Refresh tax mapping* button.
 
 .. seealso::
    - :doc:`fiscal_positions`
-   - :doc:`taxes`
+   - :doc:`../taxes`
