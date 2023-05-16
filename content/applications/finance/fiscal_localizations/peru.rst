@@ -233,7 +233,7 @@ directly to its services and get the currency rate either automatically or manua
    :alt: Bank of Peru is displayed in Multicurrency Service option
 
 Please refer to the next section in our documentation for more information about
-:doc:`multicurrencies <../accounting/others/multi_currency>`.
+:doc:`multicurrencies <../accounting/getting_started/multi_currency>`.
 
 Configure Master data
 ---------------------

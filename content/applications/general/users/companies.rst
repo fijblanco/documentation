@@ -84,8 +84,7 @@ Inter-Company Transactions
 
 First, make sure each one of your companies is properly set in relation to:
 
-- :doc:`Chart of Accounts
-  <../../finance/accounting/getting_started/initial_configuration/chart_of_accounts>`
+- :doc:`Chart of Accounts <../../finance/accounting/getting_started/chart_of_accounts>`
 - :doc:`Taxes <../../finance/accounting/taxation/taxes/default_taxes>`
 - :doc:`Fiscal Positions <../../finance/accounting/taxation/taxes/fiscal_positions>`
 - :doc:`Journals <../../finance/accounting/bank>`
@@ -130,4 +129,4 @@ at an invoice/bills level or at a sales/purchase orders level.
 
 .. seealso::
    - :doc:`Multi-company Guidelines </developer/howtos/company>`
-   - :doc:`../../finance/accounting/others/multi_currency`
+   - :doc:`../../finance/accounting/getting_started/multi_currency`

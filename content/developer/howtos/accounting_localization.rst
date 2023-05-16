@@ -120,7 +120,7 @@ Accounts
 
 .. seealso::
    - :ref:`Account References <reference/account_account>`
-   - :doc:`/applications/finance/accounting/getting_started/initial_configuration/chart_of_accounts`
+   - :doc:`/applications/finance/accounting/getting_started/chart_of_accounts`
 
 Obviously, :guilabel:`Chart of Accounts` cannot exist without :guilabel:`Accounts`. You need to specify them in :file:`data/account.account.template.csv`.
 

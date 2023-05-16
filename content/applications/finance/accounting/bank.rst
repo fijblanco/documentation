@@ -92,7 +92,7 @@ You can edit the accounting information and bank account number according to you
    :alt: Manually configure your bank information
 
 .. seealso::
-   - :doc:`others/multi_currency`
+   - :doc:`getting_started/multi_currency`
    - :doc:`bank/bank_statements`
 
 Suspense account
@@ -114,7 +114,7 @@ Currency
 You can edit the currency used to enter the statements.
 
 .. seealso::
-   :doc:`others/multi_currency`
+   :doc:`getting_started/multi_currency`
 
 Account number
 --------------

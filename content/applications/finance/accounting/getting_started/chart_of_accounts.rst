@@ -182,8 +182,8 @@ them unusable by using the **Deprecated** feature.
 To do so, check the :guilabel:`Deprecated` box in the account's settings, and save.
 
 .. seealso::
-   * :doc:`../cheat_sheet`
-   * :doc:`../../payables/assets`
-   * :doc:`../../payables/deferred_expenses`
-   * :doc:`../../receivables/deferred_revenues`
-   * :doc:`../../../fiscal_localizations`
+   * :doc:`cheat_sheet`
+   * :doc:`../payables/assets`
+   * :doc:`../payables/deferred_expenses`
+   * :doc:`../receivables/deferred_revenues`
+   * :doc:`../../fiscal_localizations`

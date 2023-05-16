@@ -40,8 +40,7 @@ To do so, go to :menuselection:`Accounting --> Configuration --> Settings`. Unde
    :alt: Configure how often tax returns have to be made in Odoo Accounting
 
 .. note::
-   This is usually configured during the :doc:`app's initial set up
-   <../getting_started/initial_configuration/setup>`.
+   This is usually configured during the :doc:`app's initial set up <../getting_started>`.
 
 .. _tax-returns/tax-grids:
 
@@ -120,5 +119,5 @@ report to the tax authorities, along with the amount you have to pay or be refun
 
 .. seealso::
    * :doc:`../taxation/taxes/taxes`
-   * :doc:`../getting_started/initial_configuration/setup`
+   * :doc:`../getting_started`
    * :doc:`../../fiscal_localizations`
