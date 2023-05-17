@@ -12,17 +12,45 @@ development with features such as AI-powered invoice recognition, synchronizatio
 accounts, smart matching suggestions, etc.
 
 .. seealso::
-   - `Odoo Tutorials: Accounting <https://www.odoo.com/slides/accounting-19>`_
-   - :doc:`Accounting Cheat Sheet <accounting/getting_started/cheat_sheet>`
+   `Odoo Tutorials: Accounting <https://www.odoo.com/slides/accounting-19>`_
 
-.. seealso::
-   - :doc:`accounting/getting_started`
-   - :doc:`accounting/receivables`
-   - :doc:`accounting/payables`
-   - :doc:`accounting/payments`
-   - :doc:`accounting/bank`
-   - :doc:`accounting/taxes`
-   - :doc:`accounting/reporting`
+.. cards::
+
+   .. card:: Getting started
+      :target: accounting/getting_started
+      :large:
+
+      Basic concepts of accounting and initial setup of your accounting
+
+   .. card:: Accounts receivable
+      :target: accounting/receivables
+
+      Customer invoices, payment terms, and electronic invoicing
+
+   .. card:: Accounts payable
+      :target: accounting/payables
+
+      Vendor bills, assets, and invoice digitization (OCR)
+
+   .. card:: Payments
+      :target: accounting/payments
+
+      Invoices and bills payments (online, checks, batches) and follow-up on invoices
+
+   .. card:: Bank and cash accounts
+      :target: accounting/bank
+
+      Bank synchronization, reconciliation, and cash registers
+
+   .. card:: Taxes
+      :target: accounting/taxes
+
+      Taxes, fiscal positions, and integrations
+
+   .. card:: Reporting
+      :target: accounting/reporting
+
+      Reporting, declarations, and analytic accounting
 
 Double-entry bookkeeping
 ========================
