@@ -1,10 +1,10 @@
-==========================
-Social marketing campaigns
-==========================
+============================
+Campañas de marketing social
+============================
 
-Social marketing campaigns help companies connect directly with the marketplace. These campaigns
-are helpful when introducing a new product to customers, explaining the value of a product or
-service, or when advertising an upcoming event or product release.
+Las campañas de marketing social ayudan a las empresas a conectarse directamente con el mercado.
+Estas campañas son útiles cuando se introduce un nuevo producto a los clientes, al explicar el 
+valor de un producto o servicio, o al anunciar un próximo evento o lanzamiento de producto.
 
 The most effective social marketing campaigns typically involve multiple channels to maximize
 content distribution, and Odoo's *Social Marketing* application acts as a singular control center to
